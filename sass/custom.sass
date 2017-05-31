@@ -1,0 +1,243 @@
+/* font colors*/
+
+$primary-color: #ff6600
+$dark-color: #333333
+$deere-color: #ffcf1d
+
+
+/**************** General ****************/
+
+body,html
+  font-family: 'Roboto Condensed', sans-serif
+  height: 100%
+  width: 100%
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizelegibility
+  color: $dark-color
+
+img
+  max-width: 100%
+
+.container-fluid
+  padding: 0 !important
+
+.btn.custom
+  color: $primary-color !important
+  border-color: $primary-color !important
+
+
+.btn.custom:hover
+  color: white
+  border-color: lighten($primary-color, 10%)
+
+p
+  line-height: 2rem
+
+h1,h2,h3,h4,h5,h6
+  color: $primary-color
+  font-weight: bold
+
+
+.no-gutter
+  padding: 0
+
+/***********  navigation section ********/
+
+#top-section
+  border-bottom: .3rem solid lighten($dark-color,20%)
+
+/***********  home section ********/
+
+.model
+  text-align: center
+
+.make-model
+  background-color: $primary-color
+  color: white
+  padding: .5rem 1rem
+
+.main-content .search-block
+  border-top: .02rem solid $primary-color
+
+.row.make-model-new
+  background-color: $dark-color
+
+input.form-control.placeholder
+  display: inline-block
+  width: 10%
+
+p.selection
+  font-size: 1.3rem
+
+select.make
+  margin: 0 0 0 0.2rem
+
+
+.row.slider-bg
+  background: url('../img/slider-background.jpg') center center repeat
+
+
+.carousel-caption.shade-bg
+  background: rgba(0,0,0,0.4)
+  padding: 1rem 2rem
+
+.sliding-parts
+  padding: 3rem 0
+
+
+/*********** main-content home section ********/
+
+
+.about
+  padding: 3rem 0
+
+footer
+  background: $dark-color
+  color: #fff
+  padding: 4rem 0
+  border-top: .25rem solid $primary-color
+  i
+    padding: 0 1rem !important
+  ul
+    margin: 0 3rem
+  p
+    margin: 1rem 0
+  p.social-text
+    margin: 2rem 0
+  .row.copyright
+    background: $primary-color
+    color: #fff
+    padding: 3rem 0
+    margin: 2rem 0 -4rem 0
+  small a
+    color: green
+  small a:hover
+    text-decoration: none
+    color: #fff
+
+
+.contact-form
+  margin: 0 .5rem 0 .5rem
+.contact-submit
+  margin: 1rem auto
+
+/*********** main-content testimonial section ********/
+
+.testimonials
+  background: $dark-color
+  padding: 1rem 0
+
+img.circle
+  border-radius: 100%
+  margin-bottom: 9rem
+
+.carousel-caption.shade-bg-testimonial
+  color: white
+  padding: 6rem 0 0 0 !important
+
+
+
+/*********** major-components-parts section  ***********/
+
+.major-components
+  margin: 4rem 0
+
+
+/*********** major-components-parts excavtor cabs section  ***********/
+
+.cabs-color
+  height: .5rem
+  width: 25rem
+  background: $primary-color
+/*********** major-components-parts excavtor deere section  ***********/
+
+.deere-color
+  height: .5rem
+  width: 25rem
+  background: $deere-color
+
+/*********** services section  ***********/
+
+
+
+/*********** contact section  ***********/
+
+
+
+
+/*********** media queries ***********/
+
+/* xs and smaller */
+@media (max-width: 575px)
+
+  footer .store-hours
+    width: 100% !important
+    display: block !important
+    margin: 0 auto !important
+
+  .shade-bg-testimonial
+    background: rgba(0,0,0,0.4)
+
+
+  .row .small-excavator
+    width: 50% !important
+
+  img.circle
+    margin-bottom: none !important
+
+  .shade-bg-testimonial
+    display: block
+    padding-top: 4rem !important
+
+  input.form-control.placeholder
+    width: 30% !important
+
+/* sm and md */
+
+@media (min-width: 576px) and (max-width: 767px)
+
+  footer .store-hours
+    width: 50% !important
+    display: block !important
+    margin: 0 auto !important
+
+  #contact .contact-block
+    width: 100% !important
+    margin: 0 auto !important
+
+  img.circle
+    margin-bottom: 11rem !important
+
+  input.form-control.placeholder
+    width: 30% !important
+
+/* md and lg */
+
+@media (min-width: 768px) and (max-width: 991px)
+
+  footer .store-hours
+    width: 40%
+    display: block !important
+    margin: 0 auto !important
+
+  #contact .contact-block
+    width: 70% !important
+    margin: 0 auto !important
+
+    img.circle
+      margin-bottom: 5rem !important
+
+
+
+
+/* lg and xl */
+
+@media (min-width: 992px) and (max-width: 1200px)
+
+
+
+/* xl and up */
+
+@media (min-width: 1200px)
+
+/* ok */
